@@ -182,6 +182,8 @@ ReactDOM.render(
 );
 ```
 
+The compiling is handled by [Babel](https://babeljs.io), a JS compiler. It converts ECMAScript intro a backwards compatible version of JS in current and older browsers or environments.
+
 ## Why Choose React?
 
 There are various reasons why one might choose React, and here are a few:
@@ -256,6 +258,8 @@ In summary, here’s what happens when you try to update the DOM in React:
 4. Changes on the real DOM cause the screen to change.
 
 ## Get Started with React
+
+
 
 \
 \

@@ -2,6 +2,12 @@
 
 * [Welcome!](README.md)
 
+## Fundamentals of Web Apps
+
+* [HTTP GET](fundamentals-of-web-apps/http-get.md)
+* [Traditional Web Applications](fundamentals-of-web-apps/traditional-web-applications.md)
+* [Running Application Logic](fundamentals-of-web-apps/running-application-logic.md)
+
 ## HTML&#x20;
 
 * [Basics of HTML](html/basics-of-html.md)
@@ -35,6 +41,7 @@
 ## React
 
 * [Intro To React, Components and JSX](react/intro-to-react-components-and-jsx.md)
+* [Advanced JSX](react/advanced-jsx.md)
 * [Nested Components, Passing Props](react/nested-components-passing-props.md)
 * [State - useState, Lifting State](react/state-usestate-lifting-state.md)
 * [Controlled vs Uncontrolled Input](react/controlled-vs-uncontrolled-input.md)

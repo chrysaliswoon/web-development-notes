@@ -91,21 +91,96 @@ const panda = <img src='images/panda.jpg' alt='panda' width='500px' height='500p
 
 #### Nested JSX
 
+Just like HTML, you can also nest JSX elements. But if it takes up more than one line, you will need to wrap the multi-line JSX expression in parentheses:
 
+```
+(
+  <a href="https://www.example.com">
+    <h1>
+      Click me!
+    </h1>
+  </a>
+)
+```
+
+Nested JSX expressions can be saved as variables, passed to functions, just like non-nested JSX expressions:
+
+```
+ const theExample = (
+   <a href="https://www.example.com">
+     <h1>
+       Click me!
+     </h1>
+   </a>
+ );
+```
+
+_Note: We use parentheses around multi-line JSX expressions to avoid JS automatic semicolon insertion which adds semicolons to terminate statements which we don't necessarily want that behaviour in a JSX expression._
 
 #### JSX Outer Elements
 
+A JSX expression must have exactly ONE outermost element. The first opening tag and the final closing tag of a JSX expression must belong to the same JSX element.
 
+This code will not work:
+
+```
+const paragraphs = (
+  <p>I am a paragraph.</p> 
+  <p>I, too, am a paragraph.</p>
+);
+```
+
+We need to add an element outside like this:
+
+```
+const paragraphs = (
+  <div id="i-am-the-outermost-element">
+    <p>I am a paragraph.</p>
+    <p>I, too, am a paragraph.</p>
+  </div>
+);
+```
 
 #### Rendering JSX
 
+To render a JSX expression means we are making it appear onscreen:
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'));
+```
+
+Output:
+
+![](<../.gitbook/assets/Screenshot 2022-01-12 at 9.34.19 PM.png>)
+
+`ReactDOM` is the **name** of a JS library. This library contains several React-specific methods.
+
+`ReactDOM.render()` **renders** the JSX. It takes a JSX expression, creates a corresponding tree of DOM nodes, and adds that tree to the DOM.&#x20;
+
+`<h1>Hello world</h1>` is the **argument** being passed to `ReactDOM.render().`
+
+`document.getElementById('app')` acted as a container for `ReactDOM.render()`'s first argument.
 
 
-#### ReactDOM.render()
 
+`ReactDOM.render()` first argument should evaluate to a JSX expression, which means it can also be a variable:
 
-
-#### Passing a Variable to ReactDOM.render()
+```
+const toDoList = (
+  <ol>
+    <li>Learn React</li>
+    <li>Become a Developer</li>
+  </ol>
+);
+ 
+ReactDOM.render(
+  toDoList, 
+  document.getElementById('app')
+);
+```
 
 ## Why Choose React?
 
@@ -141,11 +216,44 @@ The `Document Object Model` or _DOM_ for short is an API that is used to interac
 
 ![DOM Structure](https://media.geeksforgeeks.org/wp-content/uploads/20210908120846/DOM.png)
 
-The Virtual DOM is a representation of the actual _DOM_ and is a staging area for changes that will eventually be implemented. Because of that, React can keep track of changes in the actual _DOM_ by comparing different instances of the Virtual DOM.
+The Virtual DOM is a representation of the actual _DOM_ object, like a lightweight copy.&#x20;
+
+It has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.&#x20;
+
+Manipulating the DOM is slow, and it is faster to manipulate the virtual DOM as nothing gets drawn onscreen.&#x20;
+
+Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
+
+When you render a JSX element, every single virtual DOM object gets updated.
+
+Because of that, React can keep track of changes in the actual _DOM_ by comparing different instances of the Virtual DOM.
 
 ![Compare Virtual and Real DOM](https://i.imgur.com/xTxgF0b.png)
 
-React then isolates the changes between old and new instances of the Virtual DOM and then only updates the actual DOM with the necessary changes as opposed to re-rendering an entire view altogether which is significantly more efficient.
+React then isolates the changes between old and new instances of the Virtual DOM and then only updates the actual DOM with the necessary changes as opposed to re-rendering an entire view altogether which is significantly more efficient. This process is called **"diffing"**.
+
+Once React knows which virtual DOM objects have changed, it updates only those objects, on the real DOM.
+
+This means that if you render the same thing twice in a row, the second render will do nothing:
+
+```
+const hello = <h1>Hello world</h1>;
+ 
+// This will add "Hello world" to the screen:
+ 
+ReactDOM.render(hello, document.getElementById('app'));
+ 
+// This won't do anything at all:
+ 
+ReactDOM.render(hello, document.getElementById('app'));
+```
+
+In summary, here’s what happens when you try to update the DOM in React:
+
+1. The entire virtual DOM gets updated.
+2. The virtual DOM gets compared to what it looked like before you updated it. React figures out which objects have changed.
+3. The changed objects, and the changed objects only, get updated on the _real_ DOM.
+4. Changes on the real DOM cause the screen to change.
 
 ## Get Started with React
 

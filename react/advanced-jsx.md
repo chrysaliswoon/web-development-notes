@@ -67,3 +67,85 @@ ReactDOM.render(
 ```
 
 This way, it will compute {2 + 3} and output the number "5" instead of giving you the text "2 + 3".
+
+## Variables
+
+You can access variables while inside of a JSX expression event if those variables are declared outside:
+
+```
+// Declare a variable:
+const name = 'Gerdo';
+ 
+// Access your variable 
+// from inside of a JSX expression:
+const greeting = <p>Hello, {name}!</p>;
+```
+
+#### Variable Attributes
+
+We use variables when we want to set attributes. For example:
+
+```
+// Use a variable to set the `height` and `width` attributes:
+ 
+const sideLength = "200px";
+ 
+const panda = (
+  <img 
+    src="images/panda.jpg" 
+    alt="panda" 
+    height={sideLength} 
+    width={sideLength} />
+);
+```
+
+Object properties are also used to set attributes like this:
+
+```
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi"
+}; 
+ 
+const panda = (
+  <img 
+    src={pics.panda} 
+    alt="Lazy Panda" />
+);
+ 
+const owl = (
+  <img 
+    src={pics.owl} 
+    alt="Unimpressed Owl" />
+);
+ 
+const owlCat = (
+  <img 
+    src={pics.owlCat} 
+    alt="Ghastly Abomination" />
+); 
+```
+
+## Event Listeners
+
+You can create an event listener by giving a JSX element a special attribute:
+
+```
+<img onClick={myFunc} />
+```
+
+An event listener attribute's name should be something like `onClick`/`onMouseOver`.&#x20;
+
+An event listener attribute's value should be a function. For example:
+
+```
+function myFunc() {
+  alert('Make myFunc the pFunc... omg that was horrible i am so sorry');
+}
+ 
+<img onClick={myFunc} />
+
+```
+
+Note: Event listener names are all written in LOWERCASE.&#x20;

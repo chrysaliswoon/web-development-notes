@@ -25,7 +25,7 @@ At the centre of all react applications are **components**, which is a **piece o
 
 ![Visualising React](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/08/building-blocks.png)
 
-Think of a component as a single lego block. These blocks/components are integrated together to **build a bigger and more dynamic application**.&#x20;
+Think of a component as a single lego block. These blocks/components are integrated together to **build a bigger and more dynamic application**.
 
 The biggest advantage of using components is you can **change any component at any point in time** without affecting the rest of the applications.
 
@@ -33,7 +33,7 @@ The biggest advantage of using components is you can **change any component at a
 
 #### What is JSX
 
-It is a **syntax extension** for JS. It was written to be used with React.&#x20;
+It is a **syntax extension** for JS. It was written to be used with React.
 
 JSX code looks a lot like HTML:
 
@@ -51,7 +51,7 @@ This element looks exactly like HTML, expect that we find it in a JS file instea
 
 #### JSX Elements & Their Surroundings
 
-JSX elements are treated as JS **expressions**. They can go anywhere that JS expressions can go.&#x20;
+JSX elements are treated as JS **expressions**. They can go anywhere that JS expressions can go.
 
 This means that JSX elements can be saved in a variable, passed to a function, stored in an object, etc.
 
@@ -75,7 +75,7 @@ const myTeam = {
 
 #### Attributes in JSX
 
-JSX elements can have **attributes** similar to HTML elements. A JSX attribute written using HTML-like syntax:&#x20;
+JSX elements can have **attributes** similar to HTML elements. A JSX attribute written using HTML-like syntax:
 
 ```
 <a href='http://www.example.com'>Welcome to the Web</a>;
@@ -158,13 +158,11 @@ Output:
 
 `ReactDOM` is the **name** of a JS library. This library contains several React-specific methods.
 
-`ReactDOM.render()` **renders** the JSX. It takes a JSX expression, creates a corresponding tree of DOM nodes, and adds that tree to the DOM.&#x20;
+`ReactDOM.render()` **renders** the JSX. It takes a JSX expression, creates a corresponding tree of DOM nodes, and adds that tree to the DOM.
 
 `<h1>Hello world</h1>` is the **argument** being passed to `ReactDOM.render().`
 
 `document.getElementById('app')` acted as a container for `ReactDOM.render()`'s first argument.
-
-
 
 `ReactDOM.render()` first argument should evaluate to a JSX expression, which means it can also be a variable:
 
@@ -197,11 +195,11 @@ There are various reasons why one might choose React, and here are a few:
 * Flexible
   * You can us to create interesting projects that isn't a web app.
 * Popular
-  * Many companies use React, which&#x20;
+  * Many companies use React, which
 
 ## React in MVC
 
-The MVC architecture is a JS design pattern for building applications.&#x20;
+The MVC architecture is a JS design pattern for building applications.
 
 ![MVC Model](https://rangleio.ghost.io/content/images/2021/04/mvc\_blog\_diagrams\_MVC\_pattern1.png)
 
@@ -214,29 +212,23 @@ The MVC architecture is a JS design pattern for building applications.&#x20;
 
 ### Virtual DOM For Efficiency
 
-The `Document Object Model` or _DOM_ for short is an API that is used to interact with the HTML that is displayed on a page.&#x20;
+The `Document Object Model` or _DOM_ for short is an API that is used to interact with the HTML that is displayed on a page.
 
 ![DOM Structure](https://media.geeksforgeeks.org/wp-content/uploads/20210908120846/DOM.png)
 
-The Virtual DOM is a representation of the actual _DOM_ object, like a lightweight copy.&#x20;
+The Virtual DOM is a representation of the actual _DOM_ object, like a lightweight copy.
 
 It has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.&#x20;
 
-Manipulating the DOM is slow, and it is faster to manipulate the virtual DOM as nothing gets drawn onscreen.&#x20;
+Manipulating the DOM is slow, and it is faster to manipulate the virtual DOM as nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
 
-Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
-
-When you render a JSX element, every single virtual DOM object gets updated.
-
-Because of that, React can keep track of changes in the actual _DOM_ by comparing different instances of the Virtual DOM.
+When you render a JSX element, every single virtual DOM object gets updated. Because of that, React can keep track of changes in the actual _DOM_ by comparing different instances of the Virtual DOM.
 
 ![Compare Virtual and Real DOM](https://i.imgur.com/xTxgF0b.png)
 
 React then isolates the changes between old and new instances of the Virtual DOM and then only updates the actual DOM with the necessary changes as opposed to re-rendering an entire view altogether which is significantly more efficient. This process is called **"diffing"**.
 
-Once React knows which virtual DOM objects have changed, it updates only those objects, on the real DOM.
-
-This means that if you render the same thing twice in a row, the second render will do nothing:
+Once React knows which virtual DOM objects have changed, it updates only those objects, on the real DOM. This means that if you render the same thing twice in a row, the second render will do nothing:
 
 ```
 const hello = <h1>Hello world</h1>;
@@ -259,7 +251,5 @@ In summary, here’s what happens when you try to update the DOM in React:
 
 ## Get Started with React
 
-
-
 \
-\
+\\

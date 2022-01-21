@@ -8,13 +8,13 @@
 * [Traditional Web Applications](fundamentals-of-web-apps/traditional-web-applications.md)
 * [Running Application Logic](fundamentals-of-web-apps/running-application-logic.md)
 
-## HTML&#x20;
+## HTML
 
 * [Basics of HTML](html/basics-of-html.md)
 
 ## CSS
 
-* [Page 1](css/page-1.md)
+* [Basics of CSS](css/page-1.md)
 
 ## Javascript (JS)
 

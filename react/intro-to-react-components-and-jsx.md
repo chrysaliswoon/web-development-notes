@@ -251,5 +251,27 @@ In summary, here’s what happens when you try to update the DOM in React:
 
 ## Get Started with React
 
+#### Install the required dependencies (libraries)
+
+* Create the following code in **`index.html`**
+* Importing the libraries into **`index.js`**
+
+```
+<head>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Make sure your index.js is below the 2 react scripts -->
+  <script defer src="index.js"></script>
+</head>
+```
+
+_Note: Ensure that the React version is React 17 as of `16.8` React introduced `Hooks` which has changed that way we write React Components and we will use `Hooks` for the curriculum._
+
+* Using **`ReactDOM.render()`** to render our initial content.
+
+With our libraries in place we can use `ReactDOM.render()` to render either, a `Component` or `HTML` to the screen, in our basic starter app we will render some basic `HTML` for now.
+
 \
-\\
+
+
+\

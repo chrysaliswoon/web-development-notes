@@ -1,4 +1,4 @@
-# Alternatives to CRA &
+# Alternatives to CRA & Node Package
 
 ### Alternatives to CRA
 
@@ -17,9 +17,9 @@ Just some notes about using Vite:
 * You need `import * as React from "react"` as Vite is not using the latest Babel compiler
 * Your files need to end with `.jsx` extension if you're using JSX inside
 
-### Node packages
+### Node Packages
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (2).png>)
 
 * JavaScript was used mainly for client-side scripting inside `<script>` tags executing in web browsers. This limitation meant that developers were often working in many different languages and frameworks between the front-end (client-side) and backend (server-side) aspects of a web application.
 * Node allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser. Node can, therefore, be used to write server-side applications with access to the operating system, file system, and everything else required to build fully-functional applications.
@@ -42,6 +42,8 @@ These chunks of code fall into one of two categories
 
 ### Download our First npm Package
 
+#### ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FJpjNndxxBqo49X5XzFF1%2Fuploads%2FGEhGOE5cQltBnI7LzIRS%2Fimage.png?alt=media\&token=8657f9ce-71bc-4b50-94b2-249d6a50c981)**CODING TIME**
+
 To install (download) a package, first you must know its name (each name is unique in `npm`). Then run:&#x20;
 
 ```
@@ -49,6 +51,8 @@ npm i eslint
 ```
 
 In this case, we are installing the library `eslint`.
+
+**🏆CODING TIME COMPLETED**
 
 We can see that we've successfully added because or `package.json` file will have updated (under dependencies)
 

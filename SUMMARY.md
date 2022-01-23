@@ -42,8 +42,9 @@
 
 * [Introduction To React](react/intro-to-react-components-and-jsx.md)
 * [Using JSX](react/using-jsx.md)
-* [Advanced JSX](react/advanced-jsx.md)
+* [Class Names](react/advanced-jsx.md)
 * [Create React App](react/create-react-app.md)
+* [Advanced JSX](react/advanced-jsx-1.md)
 * [Nested Components, Passing Props](react/nested-components-passing-props.md)
 * [State - useState, Lifting State](react/state-usestate-lifting-state.md)
 * [Controlled vs Uncontrolled Input](react/controlled-vs-uncontrolled-input.md)

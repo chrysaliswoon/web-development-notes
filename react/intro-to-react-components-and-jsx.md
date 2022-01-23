@@ -172,3 +172,5 @@ This is what you should see:
 ![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.37.58 PM.png>)
 
 We only have to use `ReactDOM.render()` once when `mounting` React to our html. For every React app we build going forward this step will already have been completed for us and so we will never need to do this manually again.
+
+**🏆CODING TIME COMPLETED**

@@ -16,7 +16,7 @@ Syntax extension means that JSX is not valid JS. Web browsers can't read it. If 
 
 ![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
 
-* Create an index.html and index.js file
+* Create an `index.html` and `index.js` file
 
 {% code title="index.html" %}
 ```
@@ -87,6 +87,8 @@ We add Babel by making the following changes to your `index.html`
 Now your code should work!
 
 ![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.54.30 PM.png>)
+
+**🏆CODING TIME COMPLETED**
 
 #### JSX Elements & Their Surroundings
 

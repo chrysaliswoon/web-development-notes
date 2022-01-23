@@ -115,7 +115,7 @@ In summary, here’s what happens when you try to update the DOM in React:
 
 ### Get Started with React
 
-#### ****![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+#### ****![](<../.gitbook/assets/image (2) (1).png>)**CODING TIME**&#x20;
 
 #### Install the required dependencies (libraries)
 

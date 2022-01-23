@@ -12,7 +12,7 @@ const h1 = <h1> Hello world </h1>
 
 Syntax extension means that JSX is not valid JS. Web browsers can't read it. If a JS file contains JSX code, that file will need to be **compiled**.
 
-#### ![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+#### ![](<../.gitbook/assets/image (2) (1).png>)**CODING TIME**&#x20;
 
 * Create an `index.html` and `index.js` file
 

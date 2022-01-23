@@ -10,7 +10,7 @@ description: >-
 
 jQuery was the tool of choice for front-end developers but it's now starting to run its course and is being replaced by libraries that fall into the category of **framework**.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (3).png>)
 
 The biggest difference that separates jQuery and another library like React is the use virtual-DOM. While jQuery directly interacts with the DOM to manipulate elements, react uses a specialised virtual-dom.
 
@@ -115,6 +115,8 @@ In summary, here’s what happens when you try to update the DOM in React:
 
 ## Get Started with React
 
+****![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+
 #### Install the required dependencies (libraries)
 
 * Create the following code in **`index.html`**
@@ -146,6 +148,8 @@ In summary, here’s what happens when you try to update the DOM in React:
 
 _Note: Ensure that the React version is React 17 as of `16.8` React introduced `Hooks` which has changed that way we write React Components and we will use `Hooks` for the curriculum._
 
+**ReactDOM.render()**
+
 * Using **`ReactDOM.render()`** to render our initial content.
 
 With our libraries in place we can use `ReactDOM.render()` to render either, a `Component` or `HTML` to the screen, in our basic starter app we will render some basic `HTML` for now.
@@ -163,3 +167,8 @@ ReactDOM.render(element, document.getElementById("root"));;
 ```
 {% endcode %}
 
+This is what you should see:
+
+![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.37.58 PM.png>)
+
+We only have to use `ReactDOM.render()` once when `mounting` React to our html. For every React app we build going forward this step will already have been completed for us and so we will never need to do this manually again.

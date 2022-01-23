@@ -1,4 +1,4 @@
-# Starting with JSX
+# Using JSX
 
 ## Introduction to JSX
 
@@ -13,6 +13,80 @@ const h1 = <h1> Hello world </h1>
 ```
 
 Syntax extension means that JSX is not valid JS. Web browsers can't read it. If a JS file contains JSX code, that file will need to be **compiled**.
+
+![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+
+* Create an index.html and index.js file
+
+{% code title="index.html" %}
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First React</title>
+  
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <h1>First React</h1>
+  <div id="root"></div>
+</body>
+</html>
+```
+{% endcode %}
+
+```
+const rootElement = document.getElementById("root");
+
+const element = <h1>Hello World</h1>
+console.log(element);
+
+ReactDOM.render(element, document.getElementById("root"));;
+```
+
+When you run this, you will see an error in the console:
+
+![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.46.33 PM.png>)
+
+In order for JS to read it, we need to use Babel (a compiler for JS) which takes in next generation JS syntax and compiles (transforms) them into valid JS that your browser can understand.&#x20;
+
+Think of Babel as a translator which converts React JSX to JS.&#x20;
+
+![](<../.gitbook/assets/image (4).png>)
+
+We add Babel by making the following changes to your `index.html`
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First React</title>
+  
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  <script defer type="text/babel" src="index.js"></script>
+</head>
+
+<body>
+  <h1>First React</h1>
+  <div id="root"></div>
+</body>
+</html>
+```
+
+Now your code should work!
+
+![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.54.30 PM.png>)
 
 #### JSX Elements & Their Surroundings
 

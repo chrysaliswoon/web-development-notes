@@ -1,6 +1,6 @@
 # Advanced JSX
 
-## class vs className
+### class vs className
 
 Grammar in JSX is mostly the same as HTML with some slight differences.
 
@@ -33,12 +33,58 @@ const myDiv = (
 ReactDOM.render(myDiv, document.getElementById('app'))
 ```
 
-​![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FJpjNndxxBqo49X5XzFF1%2Fuploads%2FGEhGOE5cQltBnI7LzIRS%2Fimage.png?alt=media\&token=8657f9ce-71bc-4b50-94b2-249d6a50c981)**CODING TIME**
+#### ​![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FJpjNndxxBqo49X5XzFF1%2Fuploads%2FGEhGOE5cQltBnI7LzIRS%2Fimage.png?alt=media\&token=8657f9ce-71bc-4b50-94b2-249d6a50c981)**CODING TIME**
 
-\
+* Create an index.html and index.js file
 
+{% code title="index.html" %}
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First React</title>
+  
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script defer src="index.js"></script>
+</head>
 
-## Self-Closing Tags
+<body>
+  <h1>First React</h1>
+  <div id="root"></div>
+</body>
+</html>
+```
+{% endcode %}
+
+```
+const rootElement = document.getElementById("root");
+
+const element = <h1>Hello World</h1>
+console.log(element);
+
+ReactDOM.render(element, document.getElementById("root"));;
+```
+
+* Add a `div classname="App"` to the body:
+
+```
+<div className="App">
+    <h1>Hello CodeSandbox</h1>
+    <h2>Start editing to see some magic happen!</h2>
+ </div>
+```
+
+* Check the element in Chrome Developer Tools and you should see the following:
+
+![](<../.gitbook/assets/image (5).png>)
+
+#### **🏆CODING TIME COMPLETED**
+
+### Self-Closing Tags
 
 Most HTML elements use two tags: an opening tag (`<div>`) and a closing tag (`</div>`). But some HTML elements don't require a closing tag like (`<img>`) and (`<br>`).
 
@@ -54,7 +100,7 @@ NOT FINE AT ALL in JSX:
   <br>
 ```
 
-## Curly Braces
+### Curly Braces
 
 Any code in between tags of a JSX element will be read as JSX, not regular JS. JSX doesn't add numbers - it reads them as text (like HTML).
 
@@ -72,7 +118,7 @@ ReactDOM.render(
 
 This way, it will compute {2 + 3} and output the number "5" instead of giving you the text "2 + 3".
 
-## Variables
+### Variables
 
 You can access variables while inside of a JSX expression event if those variables are declared outside:
 
@@ -85,7 +131,7 @@ const name = 'Gerdo';
 const greeting = <p>Hello, {name}!</p>;
 ```
 
-#### Variable Attributes
+### Variable Attributes
 
 We use variables when we want to set attributes. For example:
 
@@ -131,7 +177,7 @@ const owlCat = (
 ); 
 ```
 
-## Event Listeners
+### Event Listeners
 
 You can create an event listener by giving a JSX element a special attribute:
 

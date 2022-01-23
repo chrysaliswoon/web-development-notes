@@ -6,7 +6,7 @@ description: >-
 
 # Introduction To React
 
-## Rise & Fall of jQuery
+### Rise & Fall of jQuery
 
 jQuery was the tool of choice for front-end developers but it's now starting to run its course and is being replaced by libraries that fall into the category of **framework**.
 
@@ -14,13 +14,13 @@ jQuery was the tool of choice for front-end developers but it's now starting to 
 
 The biggest difference that separates jQuery and another library like React is the use virtual-DOM. While jQuery directly interacts with the DOM to manipulate elements, react uses a specialised virtual-dom.
 
-## What is React?
+### What is React?
 
 It is a **JS library** created by **Facebook** for building fast and interactive User Interface (UI).
 
 ![Intro. to React](https://www.edureka.co/blog/wp-content/uploads/2017/08/jsx-2.png)
 
-#### Difference between Libraries & Framework
+### Difference between Libraries & Framework
 
 * **Library**: A set of code that was previously written, that can be called upon when building your own code.
 * **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure. It helps to standardize your code, give additional functionality, performance and can get your code off the ground faster. Some popular front-end frameworks are:
@@ -31,7 +31,7 @@ It is a **JS library** created by **Facebook** for building fast and interactive
 
 ![Difference between Library & Framework](https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/a85b23/framework-vs-library/Images/DqCkT.png)
 
-#### Components
+### Components
 
 At the centre of all react applications are **components**, which is a **piece of the user interface,** so when building applications with react, we build a **bunch of independent, isolated and reusable components** and compose them to build complex UI.
 
@@ -43,7 +43,7 @@ The biggest advantage of using components is you can **change any component at a
 
 ![What is React](https://www.edureka.co/blog/wp-content/uploads/2017/08/JS\_02.png)
 
-## Why Choose React?
+### Why Choose React?
 
 There are various reasons why one might choose React, and here are a few:
 
@@ -63,7 +63,7 @@ React was born out of Facebook's frustration with the traditional MVC model and:
 * how re-rendering something meant re-rendering **everything** (or just a lot).
 * how it had negative implications on processing power and ultimately user experience, which at times became glitchy and lagging.
 
-## React in MVC
+### React in MVC
 
 The MVC architecture is a JS design pattern for building applications.
 
@@ -113,9 +113,9 @@ In summary, here’s what happens when you try to update the DOM in React:
 3. The changed objects, and the changed objects only, get updated on the _real_ DOM.
 4. Changes on the real DOM cause the screen to change.
 
-## Get Started with React
+### Get Started with React
 
-****![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+#### ****![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
 
 #### Install the required dependencies (libraries)
 
@@ -173,4 +173,4 @@ This is what you should see:
 
 We only have to use `ReactDOM.render()` once when `mounting` React to our html. For every React app we build going forward this step will already have been completed for us and so we will never need to do this manually again.
 
-**🏆CODING TIME COMPLETED**
+#### **🏆CODING TIME COMPLETED**

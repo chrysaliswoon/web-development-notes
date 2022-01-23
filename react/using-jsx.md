@@ -1,8 +1,6 @@
 # Using JSX
 
-## Introduction to JSX
-
-#### What is JSX
+### What is JSX
 
 It is a **syntax extension** for JS. It was written to be used with React. A basic unit of JSX is called a JSX **element**.
 
@@ -14,7 +12,7 @@ const h1 = <h1> Hello world </h1>
 
 Syntax extension means that JSX is not valid JS. Web browsers can't read it. If a JS file contains JSX code, that file will need to be **compiled**.
 
-![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
+#### ![](<../.gitbook/assets/image (2).png>)**CODING TIME**&#x20;
 
 * Create an `index.html` and `index.js` file
 
@@ -88,9 +86,9 @@ Now your code should work!
 
 ![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.54.30 PM.png>)
 
-**🏆CODING TIME COMPLETED**
+#### **🏆CODING TIME COMPLETED**
 
-#### JSX Elements & Their Surroundings
+### JSX Elements & Their Surroundings
 
 JSX elements are treated as JS **expressions**. They can go anywhere that JS expressions can go. This means that JSX elements can be saved in a variable, passed to a function, stored in an object, etc.
 
@@ -112,7 +110,7 @@ const myTeam = {
 };
 ```
 
-#### Attributes in JSX
+### Attributes in JSX
 
 JSX elements can have **attributes** similar to HTML elements. A JSX attribute written using HTML-like syntax:
 
@@ -128,7 +126,7 @@ A single JSX element can have many attributes:
 const panda = <img src='images/panda.jpg' alt='panda' width='500px' height='500px' />;
 ```
 
-#### Nested JSX
+### Nested JSX
 
 Just like HTML, you can also nest JSX elements. But if it takes up more than one line, you will need to wrap the multi-line JSX expression in parentheses:
 
@@ -156,7 +154,7 @@ Nested JSX expressions can be saved as variables, passed to functions, just like
 
 _Note: We use parentheses around multi-line JSX expressions to avoid JS automatic semicolon insertion which adds semicolons to terminate statements which we don't necessarily want that behaviour in a JSX expression._
 
-#### JSX Outer Elements
+### JSX Outer Elements
 
 A JSX expression must have exactly ONE outermost element. The first opening tag and the final closing tag of a JSX expression must belong to the same JSX element.
 
@@ -180,7 +178,7 @@ const paragraphs = (
 );
 ```
 
-#### Rendering JSX
+### Rendering JSX
 
 To render a JSX expression means we are making it appear onscreen:
 

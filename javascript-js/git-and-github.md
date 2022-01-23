@@ -1,12 +1,12 @@
 # Git and GitHub
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 ## How Git & Github Works
 
 Git is an open source and free distributed version control system (VCS) used for software development.
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ## How To Pull Request
 
@@ -22,7 +22,7 @@ Different branches can be merged into any one branch as long as they belong to t
 
 &#x20;
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 Branching enables you to isolate your work from others. Changes in the primary branch or other branches will not affect your branch, unless you decide to pull the latest changes from those branches.
 

@@ -4,7 +4,15 @@ description: >-
   library for building user interfaces.
 ---
 
-# Intro To React, Components and JSX
+# Introduction To React
+
+## Rise & Fall of jQuery
+
+jQuery was the tool of choice for front-end developers but it's now starting to run its course and is being replaced by libraries that fall into the category of **framework**.
+
+![](<../.gitbook/assets/image (2).png>)
+
+The biggest difference that separates jQuery and another library like React is the use virtual-DOM. While jQuery directly interacts with the DOM to manipulate elements, react uses a specialised virtual-dom.
 
 ## What is React?
 
@@ -15,7 +23,11 @@ It is a **JS library** created by **Facebook** for building fast and interactive
 #### Difference between Libraries & Framework
 
 * **Library**: A set of code that was previously written, that can be called upon when building your own code.
-* **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure.
+* **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure. It helps to standardize your code, give additional functionality, performance and can get your code off the ground faster. Some popular front-end frameworks are:
+  * React
+  * Vue
+  * Angular
+  * Ember
 
 ![Difference between Library & Framework](https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/a85b23/framework-vs-library/Images/DqCkT.png)
 
@@ -31,157 +43,6 @@ The biggest advantage of using components is you can **change any component at a
 
 ![What is React](https://www.edureka.co/blog/wp-content/uploads/2017/08/JS\_02.png)
 
-#### What is JSX
-
-It is a **syntax extension** for JS. It was written to be used with React.
-
-JSX code looks a lot like HTML:
-
-```
-const h1 = <h1> Hello world </h1>
-```
-
-Syntax extension means that JSX is not valid JS. Web browsers can't read it. If a JS file contains JSX code, that file will need to be **compiled**.
-
-## Introduction to JSX
-
-A basic unit of JSX is called a JSX **element**.
-
-This element looks exactly like HTML, expect that we find it in a JS file instead of a HTML file.
-
-#### JSX Elements & Their Surroundings
-
-JSX elements are treated as JS **expressions**. They can go anywhere that JS expressions can go.
-
-This means that JSX elements can be saved in a variable, passed to a function, stored in an object, etc.
-
-Example of JSX element in a variable:
-
-```
-const navBar = <nav>I am a nav bar</nav>;
-```
-
-Example of JSX element in an object:
-
-```
-const myTeam = {
-  center: <li>Benzo Walli</li>,
-  powerForward: <li>Rasha Loa</li>,
-  smallForward: <li>Tayshaun Dasmoto</li>,
-  shootingGuard: <li>Colmar Cumberbatch</li>,
-  pointGuard: <li>Femi Billon</li>
-};
-```
-
-#### Attributes in JSX
-
-JSX elements can have **attributes** similar to HTML elements. A JSX attribute written using HTML-like syntax:
-
-```
-<a href='http://www.example.com'>Welcome to the Web</a>;
- 
-const title = <h1 id='title'>Introduction to React.js: Part I</h1>; 
-```
-
-A single JSX element can have many attributes:
-
-```
-const panda = <img src='images/panda.jpg' alt='panda' width='500px' height='500px' />;
-```
-
-#### Nested JSX
-
-Just like HTML, you can also nest JSX elements. But if it takes up more than one line, you will need to wrap the multi-line JSX expression in parentheses:
-
-```
-(
-  <a href="https://www.example.com">
-    <h1>
-      Click me!
-    </h1>
-  </a>
-)
-```
-
-Nested JSX expressions can be saved as variables, passed to functions, just like non-nested JSX expressions:
-
-```
- const theExample = (
-   <a href="https://www.example.com">
-     <h1>
-       Click me!
-     </h1>
-   </a>
- );
-```
-
-_Note: We use parentheses around multi-line JSX expressions to avoid JS automatic semicolon insertion which adds semicolons to terminate statements which we don't necessarily want that behaviour in a JSX expression._
-
-#### JSX Outer Elements
-
-A JSX expression must have exactly ONE outermost element. The first opening tag and the final closing tag of a JSX expression must belong to the same JSX element.
-
-This code will not work:
-
-```
-const paragraphs = (
-  <p>I am a paragraph.</p> 
-  <p>I, too, am a paragraph.</p>
-);
-```
-
-We need to add an element outside like this:
-
-```
-const paragraphs = (
-  <div id="i-am-the-outermost-element">
-    <p>I am a paragraph.</p>
-    <p>I, too, am a paragraph.</p>
-  </div>
-);
-```
-
-#### Rendering JSX
-
-To render a JSX expression means we are making it appear onscreen:
-
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'));
-```
-
-Output:
-
-![](<../.gitbook/assets/Screenshot 2022-01-12 at 9.34.19 PM.png>)
-
-`ReactDOM` is the **name** of a JS library. This library contains several React-specific methods.
-
-`ReactDOM.render()` **renders** the JSX. It takes a JSX expression, creates a corresponding tree of DOM nodes, and adds that tree to the DOM.
-
-`<h1>Hello world</h1>` is the **argument** being passed to `ReactDOM.render().`
-
-`document.getElementById('app')` acted as a container for `ReactDOM.render()`'s first argument.
-
-`ReactDOM.render()` first argument should evaluate to a JSX expression, which means it can also be a variable:
-
-```
-const toDoList = (
-  <ol>
-    <li>Learn React</li>
-    <li>Become a Developer</li>
-  </ol>
-);
- 
-ReactDOM.render(
-  toDoList, 
-  document.getElementById('app')
-);
-```
-
-The compiling is handled by [Babel](https://babeljs.io), a JS compiler. It converts ECMAScript intro a backwards compatible version of JS in current and older browsers or environments.
-
 ## Why Choose React?
 
 There are various reasons why one might choose React, and here are a few:
@@ -195,7 +56,12 @@ There are various reasons why one might choose React, and here are a few:
 * Flexible
   * You can us to create interesting projects that isn't a web app.
 * Popular
-  * Many companies use React, which
+  * Many companies use React
+
+React was born out of Facebook's frustration with the traditional MVC model and:
+
+* how re-rendering something meant re-rendering **everything** (or just a lot).
+* how it had negative implications on processing power and ultimately user experience, which at times became glitchy and lagging.
 
 ## React in MVC
 
@@ -234,11 +100,9 @@ Once React knows which virtual DOM objects have changed, it updates only those o
 const hello = <h1>Hello world</h1>;
  
 // This will add "Hello world" to the screen:
- 
 ReactDOM.render(hello, document.getElementById('app'));
  
 // This won't do anything at all:
- 
 ReactDOM.render(hello, document.getElementById('app'));
 ```
 
@@ -256,14 +120,29 @@ In summary, here’s what happens when you try to update the DOM in React:
 * Create the following code in **`index.html`**
 * Importing the libraries into **`index.js`**
 
+{% code title="index.html" %}
 ```
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First React</title>
+  
   <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <!-- Make sure your index.js is below the 2 react scripts -->
   <script defer src="index.js"></script>
 </head>
+
+<body>
+  <h1>First React</h1>
+  <div id="root"></div>
+</body>
+</html>
 ```
+{% endcode %}
 
 _Note: Ensure that the React version is React 17 as of `16.8` React introduced `Hooks` which has changed that way we write React Components and we will use `Hooks` for the curriculum._
 
@@ -271,7 +150,16 @@ _Note: Ensure that the React version is React 17 as of `16.8` React introduced `
 
 With our libraries in place we can use `ReactDOM.render()` to render either, a `Component` or `HTML` to the screen, in our basic starter app we will render some basic `HTML` for now.
 
-\
+{% code title="index.js" %}
+```
+// GRAB THE ELEMENT WITH AN ID OF ROOT AND STORE IN A VARIABLE CALLED rootElement
+const rootElement = document.getElementById("root");
 
+const element = React.createElement("h1", { children: "Hello World" });
+console.log(element);
 
-\
+// USE ReactDOM TO RENDER SOME HTML
+ReactDOM.render(element, document.getElementById("root"));;
+```
+{% endcode %}
+

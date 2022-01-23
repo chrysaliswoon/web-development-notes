@@ -40,7 +40,8 @@
 
 ## React
 
-* [Intro To React, Components and JSX](react/intro-to-react-components-and-jsx.md)
+* [Introduction To React](react/intro-to-react-components-and-jsx.md)
+* [Starting with JSX](react/starting-with-jsx.md)
 * [Advanced JSX](react/advanced-jsx.md)
 * [Nested Components, Passing Props](react/nested-components-passing-props.md)
 * [State - useState, Lifting State](react/state-usestate-lifting-state.md)

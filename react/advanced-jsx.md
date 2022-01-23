@@ -2,7 +2,7 @@
 
 ## class vs className
 
-Grammar in JSX is mostly the same as HTML with some slight differences.&#x20;
+Grammar in JSX is mostly the same as HTML with some slight differences.
 
 In HTML, we use class as an attribute name:
 
@@ -16,8 +16,7 @@ In JSX, we use className instead:
 <h1 className="big">Hello</h1>
 ```
 
-This is because JSX is translated into JS and class is a reserved word in JS. When JSX is rendered, JSX `className` attributes are rendered as `class` attributes.\
-
+This is because JSX is translated into JS and class is a reserved word in JS. When JSX is rendered, JSX `className` attributes are rendered as `class` attributes.
 
 Example of a code which uses className:
 
@@ -52,7 +51,7 @@ NOT FINE AT ALL in JSX:
 
 ## Curly Braces
 
-Any code in between tags of a JSX element will be read as JSX, not regular JS. JSX doesn't add numbers - it reads them as text (like HTML).&#x20;
+Any code in between tags of a JSX element will be read as JSX, not regular JS. JSX doesn't add numbers - it reads them as text (like HTML).
 
 To get the program to treat it like ordinary JS, we can wrap the code in curly braces like this:
 
@@ -135,7 +134,7 @@ You can create an event listener by giving a JSX element a special attribute:
 <img onClick={myFunc} />
 ```
 
-An event listener attribute's name should be something like `onClick`/`onMouseOver`.&#x20;
+An event listener attribute's name should be something like `onClick`/`onMouseOver`.
 
 An event listener attribute's value should be a function. For example:
 
@@ -145,7 +144,6 @@ function myFunc() {
 }
  
 <img onClick={myFunc} />
-
 ```
 
-Note: Event listener names are all written in LOWERCASE.&#x20;
+Note: Event listener names are all written in LOWERCASE.

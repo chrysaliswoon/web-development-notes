@@ -10,7 +10,7 @@ Git is an open source and free distributed version control system (VCS) used for
 
 ## How To Pull Request
 
-![](<../.gitbook/assets/image (3) (1) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 ## What is a Git Branch?
 

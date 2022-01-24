@@ -240,4 +240,6 @@ Now that you know how to import and export the components, create the rest of th
 
 **! Note: You will need to adjust your CSS styling so it will look like the one in the diagram**
 
+**Solution to Bonus:** [**https://codesandbox.io/s/react-floor-plan-p77gf?file=/src/styles.css**](https://codesandbox.io/s/react-floor-plan-p77gf?file=/src/styles.css) ****&#x20;
+
 **🏆CODING TIME COMPLETED**

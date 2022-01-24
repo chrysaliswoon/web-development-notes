@@ -46,6 +46,7 @@
 * [Create React App](react/create-react-app.md)
 * [Alternatives to CRA & Node Package](react/alternatives-to-cra-and-node-package.md)
 * [React Components](react/react-components.md)
+* [Nested Components](react/nested-components.md)
 * [Advanced JSX](react/advanced-jsx-1.md)
 * [Nested Components, Passing Props](react/nested-components-passing-props.md)
 * [State - useState, Lifting State](react/state-usestate-lifting-state.md)

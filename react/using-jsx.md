@@ -56,7 +56,7 @@ In order for JS to read it, we need to use Babel (a compiler for JS) which takes
 
 Think of Babel as a translator which converts React JSX to JS.&#x20;
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 We add Babel by making the following changes to your `index.html`
 

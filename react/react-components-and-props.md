@@ -1,14 +1,30 @@
-# React Components
+# React Components & Props
 
 ### What are Components?
 
-At the centre of all react applications are **components**, which is a **piece of the user interface,** so when building applications with react, we build a **bunch of independent, isolated and reusable components** and compose them to build complex UI.
+At the centre of all react applications are **components**, which is a **piece of the user interface.**
+
+When building applications with react, we build a **bunch of independent, isolated and reusable components** and compose them to build complex UI.
 
 ![Visualising React](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/08/building-blocks.png)
 
 Think of a component as a single lego block. These blocks/components are integrated together to **build a bigger and more dynamic application**.
 
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+
 ![What is React](https://www.edureka.co/blog/wp-content/uploads/2017/08/JS\_02.png)
+
+The simplest way to define a component is to write a JavaScript function:
+
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+This function is a valid React component because it accepts a single **“props”** (which stands for **properties**) object argument with data and returns a React element.&#x20;
+
+We call such components “function components” because they are literally JavaScript functions.
 
 The biggest advantage of using components is you can **change any component at any point in time** without affecting the rest of the applications.
 
@@ -20,7 +36,13 @@ This keeps our UI organized and allows the data and state changes to logically f
 
 ![](<../.gitbook/assets/image (1).png>)
 
-Components make calls to the server directly from the client-side which allows the DOM to update dynamically without refreshing the page. This is because react components are built on the concept of AJAX requests. Each component has its own interface that can make calls to the server and update them. As these components are independent of one another, each can refresh without affecting others or the UI as a whole.
+Components make calls to the server directly from the client-side which allows the DOM to update dynamically without refreshing the page.&#x20;
+
+This is because react components are built on the concept of AJAX requests.&#x20;
+
+Each component has its own interface that can make calls to the server and update them.&#x20;
+
+As these components are independent of one another, each can refresh without affecting others or the UI as a whole.
 
 When using React, building Components will be a thing you will do quite often.
 

@@ -29,9 +29,9 @@ It is a **JS library** created by **Facebook** for building fast and interactive
 ### Difference between Libraries & Framework
 
 * **Library**: A set of code that was previously written, that can be called upon when building your own code.&#x20;
-  * Analogy = Think of it as a box of individual Lego bricks which you can use to construct something.
+  * _Analogy = Think of it as a box of individual Lego bricks which you can use to construct something._
 * **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure. It helps to standardise your code, give additional functionality, performance and can get your code off the ground faster.&#x20;
-  * Analogy = If a Library is individual Lego bricks which you can use, a Framework is the manual which you can follow to create a structure, like a Lego castle for instance.
+  * _Analogy = If a Library is individual Lego bricks which you can use, a Framework is the manual which you can follow to create a structure, like a Lego castle for instance._
 * Some popular front-end frameworks are:
   * React
   * Vue
@@ -41,6 +41,16 @@ It is a **JS library** created by **Facebook** for building fast and interactive
 ![](<../.gitbook/assets/image (4).png>)
 
 ![](<../.gitbook/assets/image (6).png>)
+
+#### Potential Interview Questions
+
+* **How is React different than a JavaScript library like jQuery?**
+  * While jQuery is a utility library that enables developers to build web apps effortlessly using JavaScript, React is a library that allows embedding HTML within JavaScript.
+* **What benefit comes from using a framework like React?**
+  * One of the main benefits of using React JS is **its potential to reuse components**. It saves time for developers as they don't have to write various codes for the same features.
+* **When would you consider using a library and framework together?**
+  * When you use a library, **you are in charge of the flow of the application**. You are choosing when and where to call the library.&#x20;
+  * When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
 
 ### Why Choose React?
 

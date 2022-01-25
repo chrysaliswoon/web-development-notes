@@ -45,6 +45,6 @@
 * [Class Names](react/advanced-jsx.md)
 * [Create React App](react/create-react-app.md)
 * [Alternatives to CRA & Node Package](react/alternatives-to-cra-and-node-package.md)
-* [React Components](react/react-components.md)
+* [React Components & Props](react/react-components-and-props.md)
 * [Nested Components](react/nested-components.md)
 * [Advanced JSX](react/advanced-jsx-1.md)

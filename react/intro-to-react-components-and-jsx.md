@@ -73,12 +73,16 @@ The MVC architecture is a JS design pattern for building applications.
 
 ![MVC Model](https://rangleio.ghost.io/content/images/2021/04/mvc\_blog\_diagrams\_MVC\_pattern1.png)
 
-* M - Model
-  * Database
-* V - Views
-  * Presentation Layer: What the user sees and interacts with the browser
-* C - Controller
+* **M - Model: Stores & manages data**
+  * Database like a local web storage
+* **V - Views: Graphical User Interface**
+  * Presentation Layer: What the user sees and interacts with the browser. .
+  * The view contains all functionality that directly interacts with the user - like clicking a button, or an enter event.
+* **C - Controller: Brains of the application**
+  * The controller converts inputs from the view to demands to retrieve/update data in the model.
   * Makes decisions based on requests and controls what happens in response, like clicking on links and submitting forms.
+
+![](<../.gitbook/assets/image (8).png>)
 
 ### Virtual DOM For Efficiency
 
@@ -88,9 +92,8 @@ The `Document Object Model` or _DOM_ for short is an API that is used to interac
 
 The Virtual DOM is a representation of the actual _DOM_ object, like a lightweight copy.
 
-It has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.&#x20;
-
-Manipulating the DOM is slow, and it is faster to manipulate the virtual DOM as nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
+* It has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.&#x20;
+* Manipulating the DOM is slow, and it is faster to manipulate the virtual DOM as nothing gets drawn onscreen. Think of manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
 
 When you render a JSX element, every single virtual DOM object gets updated. Because of that, React can keep track of changes in the actual _DOM_ by comparing different instances of the Virtual DOM.
 
@@ -175,6 +178,6 @@ This is what you should see:
 
 ![](<../.gitbook/assets/Screenshot 2022-01-23 at 6.37.58 PM.png>)
 
-We only have to use `ReactDOM.render()` once when `mounting` React to our html. For every React app we build going forward this step will already have been completed for us and so we will never need to do this manually again.
+We only have to use `ReactDOM.render()` once when `mounting` React to our html. Moving forward, for every React app we build this step will already have been completed for us and so we will never need to do this manually again.
 
 #### **🏆CODING TIME COMPLETED**

@@ -26,6 +26,8 @@ This function is a valid React component because it accepts a single **“props�
 
 We call such components “function components” because they are literally JavaScript functions.
 
+The simplest way to explain component props would be to say that they function similarly to **HTML attributes**.
+
 The biggest advantage of using components is you can **change any component at any point in time** without affecting the rest of the applications.
 
 ![](<../.gitbook/assets/image (4) (1) (1).png>)
@@ -52,20 +54,20 @@ From this point on we will be creating Components, more than you ever imagined, 
 
 Some of the requirements are specific to `JSX`, short for `JavaScript And XML`, and will be reviewed again in a later section.
 
-🚔 - Rules (Component Specific)
+**🚔 - Rules (Component Specific)**
 
 * They must import `React`
 * They must be called within the JSX using an uppercase first letter
 * They must return some form of UI (user interface)
 * They must be exported from the file to be imported into another Component
 
-🚔 - Rules (JSX Specific)
+**🚔 - Rules (JSX Specific)**
 
 * They can return only one top level element but that element can contain numerous children.
 * Any JS within JSX must be enclosed in curly braces `{}`
 * The keyword class is reserved so classes must be renamed `className`
 
-⭐ Best Practices
+**⭐ Best Practices**
 
 * Each Component should be in it's own file
 * Each Component file should be in a separate folder

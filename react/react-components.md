@@ -12,7 +12,7 @@ Think of a component as a single lego block. These blocks/components are integra
 
 The biggest advantage of using components is you can **change any component at any point in time** without affecting the rest of the applications.
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 To have a better understanding, consider the entire UI as a tree. Here the starting component becomes the root and each of the independent pieces becomes branches, which are further divided into sub-branches.
 

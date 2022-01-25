@@ -6,7 +6,7 @@ In React, we can nest components inside within one another. This helps in creati
 * Import - This keyword is used to import a particular module or file and use it in the existing module.
   * Importing named values allows the user to import multiple objects from a file.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 ### Create a Floor Plan Using Nested Components
 

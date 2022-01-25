@@ -142,7 +142,7 @@ As was stated in the success message when you ran `create-react-app`, you just n
 
 It should auto-open a tab in your browser that points to `http://localhost:3000/` (if not, manually visit that address). You will find yourself looking at a page resembling the following image:
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 As stated, any changes to the source code will live-update here. Let’s see that in action:
 
@@ -159,7 +159,7 @@ It provides an intuitive way to build React components and is compiled to JavaSc
     ```
 *   Save the file and look at the browser again:
 
-    ![](<../.gitbook/assets/image (5).png>)
+    ![](<../.gitbook/assets/image (5) (1).png>)
 *   Let's remove all the create react app showcase stuff and rewrite our component to be a function:&#x20;
 
     ```

@@ -1,2 +1,0 @@
-# Controlled vs Uncontrolled Input
-

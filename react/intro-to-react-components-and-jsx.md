@@ -14,6 +14,12 @@ jQuery was the tool of choice for front-end developers but it's now starting to 
 
 The biggest difference that separates jQuery and another library like React is the use virtual-DOM. While jQuery directly interacts with the DOM to manipulate elements, react uses a specialised virtual-dom.
 
+### List of Front-end Frameworks
+
+Several years after the birth of jQuery several front end frameworks were introduced that provided a much more structured and opinionated way of writing code.
+
+![](<../.gitbook/assets/image (6).png>)
+
 ### What is React?
 
 It is a **JS library** created by **Facebook** for building fast and interactive User Interface (UI).
@@ -30,6 +36,8 @@ It is a **JS library** created by **Facebook** for building fast and interactive
   * Ember
 
 ![Difference between Library & Framework](https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/a85b23/framework-vs-library/Images/DqCkT.png)
+
+![](<../.gitbook/assets/image (4).png>)
 
 ### Why Choose React?
 

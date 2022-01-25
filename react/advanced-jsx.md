@@ -53,7 +53,7 @@ ReactDOM.render(element, document.getElementById("root"));;
 
 * Check the element in Chrome Developer Tools and you should see the following:
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1).png>)
 
 * Now let's cut out the whole div class from the HTML file and put it in our js file so it looks like this:
 

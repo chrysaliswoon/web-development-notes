@@ -22,7 +22,7 @@ The React template in Code Sandbox will automatically generate the following fil
 
 Let's ignore what's inside these boilerplate code first and start thinking about what files we need to create for our Floor Plan.&#x20;
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 Based on the diagram above, these are the various components we need to create:
 

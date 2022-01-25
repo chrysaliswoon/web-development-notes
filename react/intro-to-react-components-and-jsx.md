@@ -18,7 +18,7 @@ The biggest difference that separates jQuery and another library like React is t
 
 Several years after the birth of jQuery several front end frameworks were introduced that provided a much more structured and opinionated way of writing code.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 ### What is React?
 
@@ -28,31 +28,29 @@ It is a **JS library** created by **Facebook** for building fast and interactive
 
 ### Difference between Libraries & Framework
 
-* **Library**: A set of code that was previously written, that can be called upon when building your own code.
-* **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure. It helps to standardize your code, give additional functionality, performance and can get your code off the ground faster. Some popular front-end frameworks are:
+* **Library**: A set of code that was previously written, that can be called upon when building your own code.&#x20;
+  * Analogy = Think of it as a box of individual Lego bricks which you can use to construct something.
+* **Framework**: Supporting structure where your own code defines the "meat" of the operations by filling out the structure. It helps to standardise your code, give additional functionality, performance and can get your code off the ground faster.&#x20;
+  * Analogy = If a Library is individual Lego bricks which you can use, a Framework is the manual which you can follow to create a structure, like a Lego castle for instance.
+* Some popular front-end frameworks are:
   * React
   * Vue
   * Angular
   * Ember
 
-![Difference between Library & Framework](https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/a85b23/framework-vs-library/Images/DqCkT.png)
-
 ![](<../.gitbook/assets/image (4).png>)
+
+![](<../.gitbook/assets/image (6).png>)
 
 ### Why Choose React?
 
 There are various reasons why one might choose React, and here are a few:
 
-* Fast
-  * Apps made in React can handle complex updates, yet feel quick and responsive.
-* Modular
-  * You can write smaller, reusable files which is a great solution to JS [maintainability problems](https://en.wikipedia.org/wiki/Spaghetti\_code).
-* Scalable
-  * React is great for programs that display a lot of changing data.
-* Flexible
-  * You can us to create interesting projects that isn't a web app.
-* Popular
-  * Many companies use React
+* **Fast** - Apps made in React can handle complex updates, yet feel quick and responsive.
+* **Modular** - You can write smaller, reusable files which is a great solution to JS [maintainability problems](https://en.wikipedia.org/wiki/Spaghetti\_code).
+* **Scalable** - React is great for programs that display a lot of changing data.
+* **Flexible** - You can us to create interesting projects that isn't a web app.
+* **Popular** - Many companies use React
 
 React was born out of Facebook's frustration with the traditional MVC model and:
 

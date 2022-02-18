@@ -36,7 +36,7 @@ To have a better understanding, consider the entire UI as a tree. Here the start
 
 This keeps our UI organized and allows the data and state changes to logically flow from the root to branches and then to sub-branches.&#x20;
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 Components make calls to the server directly from the client-side which allows the DOM to update dynamically without refreshing the page.&#x20;
 
